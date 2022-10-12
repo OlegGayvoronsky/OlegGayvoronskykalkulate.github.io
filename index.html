@@ -2,18 +2,38 @@
 
 <html lang="ru">
     <head>
+        <meta charset="utf-8">
+        <meta name="generator" content="GitLab Pages">
         <title>Калькулятор</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
         <script src="./js.js" defer></script>
     </head>
-    <body>
+    <body class="d-flex flex-column align-items-center justify-content-center">
         <form>
+            <div id="help">
+                Тип товара:
+                  <select name="prodType">
+                    <option value="1">Product 1</option>
+                    <option value="2">Product 2</option>
+                    <option value="3">Product 3</option>
+                  </select>
+                  <div id="radios">
+                    <label><input type="radio" name="prodOptions" value="option1"> Опция 1</label>
+                    <label><input type="radio" name="prodOptions" value="option2"> Опция 2</label>
+                    <label><input type="radio" name="prodOptions" value="option3"> Опция 3</label>
+                  </div>
+                  <div id="checkboxes">
+                    <label><input type="checkbox" name="prop1"> Свойство 1</label>
+                    <label><input type="checkbox" name="prop2"> Свойство 2</label>
+                  </div>
+            </div>
             Cтоимость товара:
-            <input name="field1" type="text">₽
+            <input name="field1" type="text" readonly>₽
             <br>
             Количество товара:
             <input name="field2" type="text"><br>
-            <button id="my-button">Посчитать стоимость товара</button>
         </form>
-        <div id="result"></div>
+        <div class="d-flex flex-row">Результат: <div id="result" class="ml-3"></div></div>
     </body>
 </html>
