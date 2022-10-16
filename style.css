@@ -1,7 +1,6 @@
 body {
-  background-color: #FEE8D1;
+  background-color:#93AAB0;
   font-family: sans-serif;
-  max-width: 1280px;
 }
 
 .navbar {
@@ -24,5 +23,5 @@ body {
 
 form{
   border-radius: 9px;
-  background-color: #A33710;
+  background-color: #507679;
 }

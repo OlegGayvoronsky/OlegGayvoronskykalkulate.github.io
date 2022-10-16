@@ -11,14 +11,14 @@ function click1() {
   }
 
   function onClick() {
+    let r = document.querySelectorAll("#choise input");
+    if(r[0].checked) {
     alert(click1());
+    }
+    else {
+    click1();
+    }
   }
-
-  window.addEventListener('DOMContentLoaded', function (event) {
-    console.log("DOM fully loaded and parsed");
-    let b = document.getElementById("my-button");
-    b.addEventListener("click", onClick);
-  });
 
   function updatePrice() {
     // Находим select по имени в DOM.
